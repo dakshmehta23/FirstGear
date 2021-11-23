@@ -6,7 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from PayTm import Checksum
 # Create your views here.
 from django.http import HttpResponse
-MERCHANT_KEY = 'Au&BQjuy8ltM0mGv'
+MERCHANT_KEY = 'C93cffb8D9M1cSOU'
 
 def index(request):
     allProds = []
@@ -113,12 +113,12 @@ def checkout(request):
         # Request paytm to transfer the amount to your account after payment by user
         param_dict = {
 
-                'MID': 'JpPZLn04309926118118',
+                'MID': 'flRsnA24625382900927',
                 'ORDER_ID': str(order.order_id),
                 'TXN_AMOUNT': str(amount),
                 'CUST_ID': email,
                 'INDUSTRY_TYPE_ID': 'Retail',
-                'WEBSITE': 'DEFAULT', #changed this
+                'WEBSITE': 'WEBSTAGING', #changed this
                 'CHANNEL_ID': 'WEB',
                 'CALLBACK_URL':'https://first-gear.herokuapp.com/shop/handlerequest/', #changing this url
 
