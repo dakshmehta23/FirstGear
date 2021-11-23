@@ -25,7 +25,8 @@ SECRET_KEY = ')4&r01j2v43l%(+m5l73+)gps=ae^zd3@z0fjzkx@n9@upofsd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#new addede
+ALLOWED_HOSTS = ['first-gear.herokuapp.com','127.0.0.1']
 
 
 # Application definition
