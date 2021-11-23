@@ -118,7 +118,7 @@ def checkout(request):
                 'TXN_AMOUNT': str(amount),
                 'CUST_ID': email,
                 'INDUSTRY_TYPE_ID': 'Retail',
-                'WEBSITE': 'WEBSTAGING',
+                'WEBSITE': 'DEFAULT', #changed this
                 'CHANNEL_ID': 'WEB',
                 'CALLBACK_URL':'https://first-gear.herokuapp.com/shop/handlerequest/', #changing this url
 
